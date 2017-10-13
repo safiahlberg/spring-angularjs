@@ -3,10 +3,10 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.demo</groupId>
-	<artifactId>pairs-spring-session</artifactId>
+	<artifactId>pairs-proxy</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	<name>Spring Pairs Samples Spring Session</name>
+	<name>Spring Pairs Samples Proxy</name>
 
 	<modules>
 		<module>ui</module>
