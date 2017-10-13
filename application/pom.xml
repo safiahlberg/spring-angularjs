@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.test</groupId>
-	<artifactId>basic</artifactId>
+	<artifactId>single</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>basic</name>
+	<name>single</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
@@ -33,6 +33,11 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
 			<groupId>org.webjars</groupId>
 			<artifactId>angularjs</artifactId>
 			<version>${angularjs.version}</version>
@@ -48,13 +53,11 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<java.version>1.8</java.version>
 		<wro4j.version>1.8.0</wro4j.version>
-		<!-- tag::versions[] -->
+		<java.version>1.8</java.version>
 		<angularjs.version>1.4.9</angularjs.version>
 		<bootstrap.version>3.3.7-1</bootstrap.version>
 		<jquery.version>2.2.4</jquery.version>
-		<!-- end::versions[] -->
 		<jasmine.version>2.0.0</jasmine.version>
 	</properties>
 
@@ -148,12 +151,12 @@
 					<additionalContexts>
 						<context>
 							<contextRoot>/lib</contextRoot>
-							<directory>${project.build.directory}/generated-resources/static/js</directory>
+							<directory>${project.build.directory}/classes/static/js</directory>
 						</context>
 					</additionalContexts>
 					<preloadSources>
 						<source>/lib/angular-bootstrap.js</source>
-						<source>/webjars/angularjs/${angularjs.version}/angular-mocks.js</source>
+						<source>/webjars/angularjs/1.4.9/angular-mocks.js</source>
 					</preloadSources>
 					<jsSrcDir>${project.basedir}/src/main/resources/static/js</jsSrcDir>
 					<jsTestSrcDir>${project.basedir}/src/test/resources/static/js</jsTestSrcDir>
