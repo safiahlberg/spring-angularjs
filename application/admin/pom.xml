@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.test</groupId>
-	<artifactId>double-ui</artifactId>
+	<artifactId>double-admin</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>double-ui</name>
+	<name>double-admin</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
